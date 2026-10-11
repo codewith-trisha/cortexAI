@@ -1,10 +1,12 @@
 # 🚀 CortexAI — Enterprise Multipurpose AI Platform
 
-[![React](https://img.shields.io/badge/Frontend-React%20%7C%20Vite%20%7C%20Redux-blue)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-green)](https://nodejs.org/)
-[![Microservices](https://img.shields.io/badge/Architecture-Microservices%20%7C%20Docker-orange)](https://www.docker.com/)
-[![Database](https://img.shields.io/badge/Caching-Redis-red)](https://redis.io/)
-[![Auth](https://img.shields.io/badge/Auth-Firebase%20%7C%20OAuth%202.0-yellow)](https://firebase.google.com/)
+<p align="left">
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/Frontend-React%20%7C%20Vite%20%7C%20Redux-blue" alt="React"></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-green" alt="Node.js"></a>
+  <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Architecture-Microservices%20%7C%20Docker-orange" alt="Docker"></a>
+  <a href="https://redis.io/"><img src="https://img.shields.io/badge/Caching-Redis-red" alt="Redis"></a>
+  <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Auth-Firebase%20%7C%20OAuth%202.0-yellow" alt="Firebase"></a>
+</p>
 
 ---
 
@@ -16,23 +18,23 @@
 ## ✨ Key Features & Architectural Highlights
 
 ### ⚡ 1. Microservices Backend Architecture
-* **API Gateway Pattern:** Centralized entry point handling request routing, middleware execution, and rate limiting.
-* **Decoupled Services:** Isolated services for **Auth**, **Agent**, **Billing**, and **Chat** ensuring high fault isolation and independent scalability.
-* **High-Performance Caching:** Integrated **Redis** service for rapid session management and cached request delivery.
-* **Containerized Deployment:** Dockerized microservices configured for quick orchestration using `docker-compose`.
+- **API Gateway Pattern:** Centralized entry point handling request routing, middleware execution, and rate limiting.
+- **Decoupled Services:** Isolated services for **Auth**, **Agent**, **Billing**, and **Chat** ensuring high fault isolation and independent scalability.
+- **High-Performance Caching:** Integrated **Redis** service for rapid session management and cached request delivery.
+- **Containerized Deployment:** Dockerized microservices configured for quick orchestration using `docker-compose`.
 
 ### 🛡️ 2. Secure Authentication & User Management
-* **Firebase & Google OAuth 2.0:** Multi-provider authentication supporting persistent user sessions and token-based client verification.
-* **Protected Routes & Interceptors:** Centralized API request handling with automated auth token verification via custom Axios middleware.
+- **Firebase & Google OAuth 2.0:** Multi-provider authentication supporting persistent user sessions and token-based client verification.
+- **Protected Routes & Interceptors:** Centralized API request handling with automated auth token verification via custom Axios middleware.
 
 ### 💬 3. Interactive AI Chat Engine
-* **Real-time Messaging Pipeline:** Optimized message streaming and dynamic state dispatching using Redux Toolkit (`conversationSlice`, `messageSlice`).
-* **Artifacts & Rich UI Elements:** Dynamic rendering of generated content, code blocks, and interactive AI artifacts (`Artifact.jsx`).
-* **Conversation Management:** Real-time conversation creation, dynamic updates, and full message history retention.
+- **Real-time Messaging Pipeline:** Optimized message streaming and dynamic state dispatching using Redux Toolkit (`conversationSlice`, `messageSlice`).
+- **Artifacts & Rich UI Elements:** Dynamic rendering of generated content, code blocks, and interactive AI artifacts (`Artifact.jsx`).
+- **Conversation Management:** Real-time conversation creation, dynamic updates, and full message history retention.
 
 ### 💳 4. Integrated Billing & Subscriptions
-* **Transaction Verification:** Custom payment verification workflows (`verifyPayment.js`) integrated into a dedicated billing drawer UI (`BillingDrawer.jsx`).
-* **Usage Tiering:** Middleware verification to control API usage based on active user subscription levels.
+- **Transaction Verification:** Custom payment verification workflows (`verifyPayment.js`) integrated into a dedicated billing drawer UI (`BillingDrawer.jsx`).
+- **Usage Tiering:** Middleware verification to control API usage based on active user subscription levels.
 
 ---
 
